@@ -178,6 +178,12 @@ template {
   --section-tagline-transform: uppercase;
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
 }
 
 *,
@@ -191,6 +197,7 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
+
 /* styling on the body */
 body {
   color: var(--text-color);
@@ -199,6 +206,7 @@ body {
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
 }
+
 /* all headings are targetted here */
 h1,
 h2,
@@ -209,6 +217,7 @@ h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
+
 /* targets all anchor tags */
 a:link {
   color: var(--text-color);
@@ -234,11 +243,24 @@ a:active {
   color: var(--color-primary);
 }
 
-/* all section headings are set to align at the center */
-.section-header {
-  text-align: var(--section-header-align);
+/* sections stylings */
+.section {
+  padding: var(--section-padding);
 }
 
+.section-header {
+  text-align: var(--section-header-align);
+  padding: var(--section-header-padding);
+}
+
+.section-body {
+  padding: var(--section-body-padding);
+}
+
+.section-footer {
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
+}
 .section-title {
   font-family: var(--font-family-title);
   font-size: var(--font-size-xx-large);
@@ -252,4 +274,14 @@ a:active {
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
+}
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  padding: var(--footer-padding);
 }
