@@ -190,7 +190,7 @@ template {
 
   --footer-padding: 5rem 0 1rem;
 
-  --nav-item-font-family: --font-family-title;
+  --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
   --nav-item-letter-spacing: 0.04rem;
@@ -391,6 +391,7 @@ a:active {
 }
 
 .section-tagline {
+  margin: var(--section-tagline-margin);
   color: var(--color-primary);
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);

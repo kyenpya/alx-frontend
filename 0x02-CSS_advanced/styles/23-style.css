@@ -331,6 +331,7 @@ a:active {
 }
 
 .section-tagline {
+  margin: var(--section-tagline-margin);
   color: var(--color-primary);
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
